@@ -20,7 +20,8 @@ public class User {
    private String email;
 
 
-   @OneToOne(cascade = CascadeType.ALL, mappedBy = "user")
+   @OneToOne(mappedBy = "user")
+   @MapsId
    private Car car;
 
    public User() {
