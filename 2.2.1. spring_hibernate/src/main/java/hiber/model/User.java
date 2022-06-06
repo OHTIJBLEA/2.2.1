@@ -20,7 +20,7 @@ public class User {
    private String email;
 
 
-   @OneToOne(mappedBy = "user")
+   @OneToOne
    @MapsId
    private Car car;
 
